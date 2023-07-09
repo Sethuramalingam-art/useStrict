@@ -1,0 +1,20 @@
+"use strict"
+x = 30; // without declare throw error
+
+"use strict";
+x = {p1:10, p2:20};  // without declare throw error
+
+"use strict";
+let x = 3.14;
+delete x;  // deleteing not allowed
+
+"use strict";
+function x(p1, p2) {}; // hoisting not possible
+delete x;   
+
+
+"use strict";
+function x(p1, p1) {};  
+
+"use strict";
+let eval = 3.14;  // eval not use an variable in strict 
